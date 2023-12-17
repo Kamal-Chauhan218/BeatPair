@@ -6,7 +6,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Home from './pages/Home';
 import Message from './pages/Message';
 import Testing from './pages/Testing';
-import Loader from './pages/Loader';
+import Splashscreen from './pages/Splashscreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -17,7 +17,7 @@ function App() {
         screenOptions={{
           headerShown: false,
         }}>
-        <Stack.Screen name="loader" component={Loader} />
+        <Stack.Screen name="loader" component={Splashscreen} />
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Message" component={Message} />
         <Stack.Screen name="Testing" component={Testing} />

@@ -34,22 +34,34 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFCC00',
   },
   text: {
-    fontSize: 20,
+    fontSize: 40,
+    marginRight: 20,
     color: 'Black',
-    
+    fontFamily:'Arvo-BoldItalic',
+    transform: [{rotate: '-20deg'}],
+  },
+  text1: {
+    fontSize: 40,
+    marginLeft: 10,
+    marginBottom: 10,
+    color: 'Black',
+    fontFamily: 'Arvo-BoldItalic',
+    transform: [{rotate: '-20deg'}],
   },
 });
-function Loader({navigation}) {
+
+function Splashscreen({navigation}) {
   return (
     <View style={styles.container}>
       <View style={styles.CircleShape}>
         <View style={styles.InnerCircleShape}>
           <View style={styles.InnerCircleShapeChild}>
-            <Text style={styles.text}>Beat Pair </Text>
+            <Text style={styles.text}>Beat</Text>
+            <Text style={styles.text1}>Pair</Text>
           </View>
         </View>
       </View>
     </View>
   );
 }
-export default Loader;
+export default Splashscreen;
